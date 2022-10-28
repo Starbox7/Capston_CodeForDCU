@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp">
+        <TextView
+            android:layout_width= "match_parent"
+            android:layout_height= "match_parent"
+            android:text = "Let's Do it Together!"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#00FF00"
+            android:textSize = "50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_icon2"
+                android:id="@+id/editTextId"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:inputType="text"
+                android:layout_margin="10dp"
+
+                android:drawablePadding="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:hint="ID"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password_icon3"
+                android:id="@+id/editTextPW"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:inputType="textPassword"
+                android:layout_margin="10dp"
+
+                android:drawablePadding="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:hint="password"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text = "Log In"
+                android:background="#FF03DAC5"
+                android:id = "@+id/loginBtn"
+                android:layout_margin="10dp"
+                android:textSize = "20dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity = "center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Log In"
+                android:textSize = "20dp"
+                android:layout_margin="10dp"
+                android:src = "@drawable/kakao_login"
+                android:background="@android:color/transparent"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Log In"
+                android:textSize = "20dp"
+                android:layout_margin="10dp"
+                android:src = "@drawable/naver_login"
+                android:background="@android:color/transparent"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/facebook_login"
+                android:text="Log In"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
